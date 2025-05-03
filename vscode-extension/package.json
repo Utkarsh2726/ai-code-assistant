@@ -1,0 +1,26 @@
+
+{
+  "name": "ai-code-assistant",
+  "displayName": "AI Code Assistant",
+  "description": "Generate, fix, and explain frontend/backend code using StarCoder2.",
+  "version": "0.0.1",
+  "publisher": "you",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:aicodeassistant.askAI"],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aicodeassistant.askAI",
+        "title": "AI: Ask Code Assistant"
+      }
+    ]
+  },
+  "scripts": {},
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
